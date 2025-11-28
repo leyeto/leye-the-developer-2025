@@ -3,13 +3,13 @@ import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 
 const poppinsSan = Poppins({
-  variable: "--font-geist-sans",
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 // Poppins for Headings, Roboto for Body
 const roboto = Roboto({
-  variable: "--font-geist-mono",
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
@@ -25,9 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppinsSan.className} ${roboto.className}`}>
-      <body className={`${poppinsSan.variable} ${roboto.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }
