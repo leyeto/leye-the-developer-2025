@@ -26,8 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppinsSan.className} ${roboto.className}`}>
-      <Navbar />
-      <body className={`antialiased max-w-[1270px]`}>{children}</body>
+      <body className={`antialiased`}>
+        <div className="mx-auto max-w-[1270px]">
+          <Navbar />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

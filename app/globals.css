@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #010909;
+  --foreground: #ffffff;
   --highlight-color: #41d8d8; /* Custom highlight color */
   --font-poppins: var(--font-poppins); /* Poppins for headings */
   --font-roboto: var(--font-roboto); /* Roboto for body text */
@@ -14,12 +14,6 @@
   --color-ld-teal: var(--highlight-color);
   --font-sans: var(--font-poppins); /* Default to Poppins for headings */
   --font-mono: var(--font-roboto); /* Default to Roboto for body text */
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #010909;
-    --foreground: #ededed;
-  }
 }
 
 body {
