@@ -6,7 +6,7 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <header className="my-6">
-      <nav className="flex gap-4 justify-between items-endd">
+      <nav className="flex gap-4 justify-between items-end">
         <Link href="/">
           <Logo />
         </Link>
