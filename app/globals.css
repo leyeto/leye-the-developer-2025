@@ -1,51 +1,30 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #010909;
-  --foreground: #ffffff;
-  --highlight-color: #41d8d8; /* Custom highlight color */
-  --font-poppins: var(--font-poppins); /* Poppins for headings */
-  --font-roboto: var(--font-roboto); /* Roboto for body text */
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-ld-teal: var(--highlight-color);
-  --font-sans: var(--font-poppins); /* Default to Poppins for headings */
-  --font-mono: var(--font-roboto); /* Default to Roboto for body text */
+  --color-ld-teal: #41d8d8;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-roboto), Arial, Helvetica, sans-serif; /* Default to Roboto for body text */
-}
-
-/* Headings should use Poppins */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-poppins), sans-serif; /* Poppins for headings */
-  color: var(--foreground); /* Make headings match text color */
-}
-
-/* Links */
-a {
-  color: var(--foreground); /* Default link color */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover,
-a:focus {
-  color: var(--highlight-color); /* Highlight color on hover or focus */
-}
-
-/* Active links */
-a:active {
-  color: var(--highlight-color); /* Active link color */
+  font-family: Arial, Helvetica, sans-serif;
 }

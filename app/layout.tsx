@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
+import "../components/Aurora.css";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppinsSan.className} ${roboto.className}`}>
       <body className={`antialiased`}>
-        <div className="mx-auto max-w-[1270px]">
+        <div className="mx-auto max-w-[1270px] px-6">
           <Navbar />
           {children}
         </div>
