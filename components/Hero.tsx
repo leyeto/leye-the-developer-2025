@@ -10,7 +10,7 @@ const heroSerivces = [
 
 const Hero = () => {
   return (
-    <div className="Hero flex flex-col md:flex-row-reverse items-center ">
+    <div className="Hero flex flex-col md:flex-row-reverse items-center gap-6">
       <div className="Hero_Image">
         <Image
           src="images/hero-image.svg"
@@ -21,7 +21,12 @@ const Hero = () => {
         />
       </div>
       <div className="Hero_Content md:max-w-[50%]">
-        {/* <Aurora /> */}
+        <Aurora
+          colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
+          blend={0.5}
+          amplitude={10}
+          speed={0.3}
+        />
         <div className="Hero_MainContent flex flex-col gap-4">
           <h2 className="font-medium text-[58px]">
             Stunning, captivating websites delivered in just{" "}
