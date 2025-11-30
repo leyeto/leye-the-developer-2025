@@ -1,6 +1,6 @@
-// components/Button.tsx
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 type ButtonVariant = "filled" | "outline";
 
@@ -25,12 +25,17 @@ export default function Button({
   const variants = {
     filled: "bg-ld-teal text-black hover:bg-white active:scale-95",
     outline:
-      "bg-transparent border-gray-800 border hover:bg-teal-500 active:scale-95",
+      "bg-transparent border-gray-800 border hover:bg-ld-teal hover:text-black active:scale-95",
   };
 
   const widthStyle = fullWidth ? "w-full" : "";
 
-  const buttonClasses = `${baseStyles} ${variants[variant]} ${widthStyle} ${className}`;
+  const buttonClasses = cn(
+    baseStyles,
+    variants[variant],
+    widthStyle,
+    className
+  );
 
   // If href is provided, render as Link
   if (href) {
