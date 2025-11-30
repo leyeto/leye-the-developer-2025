@@ -1,8 +1,9 @@
+"use client";
 import Image from "next/image";
 import Aurora from "./Aurora";
 import Button from "./Button";
 
-const heroSerivces = [
+const heroServices = [
   "Up to 5 pages + mobile responsive",
   "1 year hosting + domain included",
   "SEO optimized + Web Analytics included",
@@ -13,7 +14,7 @@ const Hero = () => {
     <div className="Hero flex flex-col md:flex-row-reverse items-center gap-6">
       <div className="Hero_Image">
         <Image
-          src="images/hero-image.svg"
+          src="/images/hero-image.svg"
           alt="Hero"
           width={700}
           height={700}
@@ -39,11 +40,11 @@ const Hero = () => {
             We handle the website so you can focus on what you do best
           </p>
           <div className="Hero_Offer">
-            <ul className="text-ld-teal">
-              {heroSerivces.map((service, index) => (
+            <ul>
+              {heroServices.map((service, index) => (
                 <li key={index} className="flex gap-2 text-white text-[20px]">
                   <Image
-                    src={"images/hero-tick.svg"}
+                    src={"/images/hero-tick.svg"}
                     width={20}
                     height={20}
                     alt="tick"

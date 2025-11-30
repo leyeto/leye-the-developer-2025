@@ -23,9 +23,9 @@ export default function Button({
     "px-6 py-3 rounded-lg font-medium transition-all duration-200 inline-flex items-center justify-center";
 
   const variants = {
-    filled: "bg-ld-teal text-black hover:bg-white-700 active:scale-95",
+    filled: "bg-ld-teal text-black hover:bg-white active:scale-95",
     outline:
-      "bg-transparent border-gray-800 border-1 hover:bg-teal-500 active:scale-95",
+      "bg-transparent border-gray-800 border hover:bg-teal-500 active:scale-95",
   };
 
   const widthStyle = fullWidth ? "w-full" : "";
