@@ -11,7 +11,7 @@ const heroServices = [
 
 const Hero = () => {
   return (
-    <div className="Hero flex flex-col md:flex-row-reverse items-center gap-6">
+    <div className="Hero flex flex-col md:flex-row-reverse items-center gap-6 my-15">
       <div className="Hero_Image">
         <Image
           src="/images/hero-image.svg"
