@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
-import "../components/Aurora.css";
+import "../components/Aurora/Aurora.css";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 

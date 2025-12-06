@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Aurora from "./Aurora";
+import Aurora from "./Aurora/Aurora";
 import Button from "./Button";
 
 const heroServices = [

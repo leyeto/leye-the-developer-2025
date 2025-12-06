@@ -1,9 +1,3 @@
-const offerings = [
-  {
-    service: "Up to 5 pages",
-    description: "Complete website design and development",
-  },
-];
 const Services = () => {
   return (
     <div className="Services flex items-center flex-col">
