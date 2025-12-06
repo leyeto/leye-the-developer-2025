@@ -1,4 +1,4 @@
-type Service = {
+export type Service = {
   service: string;
   description: string;
   imgUrl: string;
