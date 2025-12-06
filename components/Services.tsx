@@ -1,3 +1,5 @@
+import ServiceList from "./ServiceList";
+
 const Services = () => {
   return (
     <div className="Services flex items-center flex-col">
@@ -13,7 +15,9 @@ const Services = () => {
           confidence.
         </h5>
       </div>
-      <div className="Services_Offers"></div>
+      <div className="Services_Offers">
+        <ServiceList />
+      </div>
     </div>
   );
 };
