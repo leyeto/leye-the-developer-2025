@@ -30,14 +30,14 @@ const Hero = () => {
         />
         <div className="Hero_MainContent flex flex-col gap-4">
           <h2 className="font-medium text-[58px]">
-            Stunning, captivating websites delivered in just{" "}
-            <span className="text-ld-teal underline font-extrabold">
-              2 Weeks
+            Get Your Website in 2 Weeks For -{" "}
+            <span className="text-ld-teal underline font-extrabold text-[60px]">
+              £1,000
             </span>
-            .
           </h2>
           <p className="Hero_SubHeading text-2xl">
-            We handle the website so you can focus on what you do best
+            A clean and professional website built in 14 days, perfect for new
+            business owners ready to launch with confidence.
           </p>
           <div className="Hero_Offer">
             <ul>
