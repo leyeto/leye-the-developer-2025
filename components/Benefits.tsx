@@ -22,13 +22,13 @@ const Benefits = () => {
           Don&apos;t let potential customers slip away. Here&apos;s how a
           professional website transforms your business
         </p>
+        <div className="Benefits_Cards flex flex-col gap-4">
+          {leftBenefits.map((benefit, index) => (
+            <BenefitsCard key={index} title={benefit} />
+          ))}
+        </div>
       </div>
       <div className="Benefits_ImageArea"></div>
-      <div className="Benefits_Cards flex flex-col gap-4">
-        {leftBenefits.map((benefit, index) => (
-          <BenefitsCard key={index} title={benefit} />
-        ))}
-      </div>
     </div>
   );
 };
