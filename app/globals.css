@@ -12,7 +12,6 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-ld-teal: #41d8d8;
-  --color-ld-gray: #c8c8c8;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

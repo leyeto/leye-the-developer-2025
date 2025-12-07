@@ -1,4 +1,3 @@
-import React from "react";
 import BenefitsCard from "./BenefitsCard";
 import Image from "next/image";
 
@@ -11,15 +10,15 @@ const leftBenefits = [
 ];
 
 const rightBenefits = [
-  "You get an email address or your company (this is to reduce the chances of your emails going into potential client spam boxes). I've filled contact me forms on websites on ly to get contacted months after I've received the same service from another company.",
+  "You get an email address for your company (this reduces the chances of your emails going into potential client spam boxes). I've filled in contact forms only to be contacted months later, after I'd already received the same service from another company.",
 ];
 
 const Benefits = () => {
   return (
     <div className="Benefits flex flex-col my-10">
       <h3 className="Benefits_Title text-ld-teal text-center">BENEFITS</h3>
-      <div className="Benefits_Container flex flex-col md:flex-row gap-5 my-7">
-        <div className="Benefits_TextArea md:max-w-1/2">
+      <div className="Benefits_Container flex flex-col md:flex-row md:justify-between gap-5 my-7">
+        <div className="Benefits_TextArea md:max-w-[48%]">
           <h4 className="Benefits_Heading text-[58px]">
             Why your business needs a{" "}
             <span className="text-ld-teal">website</span>
@@ -34,10 +33,10 @@ const Benefits = () => {
             ))}
           </div>
         </div>
-        <div className="Benefits_ImageArea flex flex-col justify-between md:max-w-1/2">
+        <div className="Benefits_ImageArea flex flex-col justify-between md:max-w-[48%]">
           <Image
             src="/images/benefits.webp"
-            alt="Benefits"
+            alt="benefit-image"
             width={600}
             height={600}
             style={{ maxHeight: "600px" }}

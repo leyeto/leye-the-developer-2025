@@ -1,12 +1,11 @@
 import Image from "next/image";
-import React from "react";
 
 const BenefitsCard = ({ title }: { title: string }) => {
   return (
     <div className="BenefitsCard bg-gray-900 flex gap-4 items-center p-4 rounded-2xl">
       <Image
         src="/images/benefits-tick.svg"
-        alt="Benefits"
+        alt="benefit-tick"
         width={42}
         height={42}
       />
