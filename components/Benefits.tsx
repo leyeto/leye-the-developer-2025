@@ -6,7 +6,7 @@ const leftBenefits = [
   "We will create an amazing looking website that would showcase your business",
   "SEO will be included to help search engines help your ideal clients find you",
   "Register on major search consoles so your website can be found by search engines",
-  "Your website will be responsive looking great on whatever devices it is viewed on",
+  "Your website will be responsive and look great on any device it is viewed on",
 ];
 
 const rightBenefits = [
