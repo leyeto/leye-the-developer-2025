@@ -2,7 +2,7 @@ import ServiceList from "./ServiceList";
 
 const Services = () => {
   return (
-    <div className="Services flex items-center flex-col">
+    <section className="Services flex items-center flex-col">
       <h3 className="Services_Heading text-ld-teal">What You Get</h3>
       <div className="Services_Heading flex flex-col items-center">
         <h4 className="Services_Highlight font-bold text-[58px]">
@@ -18,7 +18,7 @@ const Services = () => {
       <div className="Services_Offers">
         <ServiceList />
       </div>
-    </div>
+    </section>
   );
 };
 

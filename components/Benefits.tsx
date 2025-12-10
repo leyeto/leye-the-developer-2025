@@ -15,7 +15,7 @@ const rightBenefits = [
 
 const Benefits = () => {
   return (
-    <div className="Benefits flex flex-col my-10">
+    <section className="Benefits flex flex-col my-10">
       <h3 className="Benefits_Title text-ld-teal text-center">BENEFITS</h3>
       <div className="Benefits_Container flex flex-col md:flex-row md:justify-between gap-5 my-7">
         <div className="Benefits_TextArea md:max-w-[48%]">
@@ -46,7 +46,7 @@ const Benefits = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
