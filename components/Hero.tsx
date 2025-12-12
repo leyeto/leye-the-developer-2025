@@ -19,7 +19,6 @@ const Hero = () => {
           priority
           width={700}
           height={700}
-          style={{ maxHeight: "70vh" }}
         />
       </div>
       <div className="Hero_Content md:max-w-[50%]">
