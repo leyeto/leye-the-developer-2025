@@ -1,4 +1,4 @@
-// ProcessSection.tsx
+import Image from "next/image";
 import { processSteps } from "@/data/processData";
 import { ProcessCard } from "@/components/ProcessCard";
 
@@ -15,7 +15,7 @@ export default function ProcessSection() {
           just 2 weeks
         </h3>
 
-        <div className="flex flex-col gap-3">
+        <div className="Process_Stepsflex flex-col gap-3">
           {processSteps.map((step, index) => (
             <ProcessCard
               key={step.id}
@@ -28,6 +28,17 @@ export default function ProcessSection() {
               `}
             />
           ))}
+        </div>
+        <div className="Process_FlowChart">
+          <h4 className="Process_FlowHeading text-center text-3xl font-bold my-6 underline">
+            Our 2-Week Website Process
+          </h4>
+          <Image
+            src="/images/flow-chart.svg"
+            alt="flowchart"
+            width={700}
+            height={700}
+          />
         </div>
       </div>
     </section>
