@@ -11,7 +11,7 @@ const heroServices = [
 
 const Hero = () => {
   return (
-    <div className="Hero flex flex-col md:flex-row-reverse items-center gap-6 my-15">
+    <section className="Hero flex flex-col md:flex-row-reverse items-center gap-6 my-15">
       <div className="Hero_Image">
         <Image
           src="/images/hero-image.webp"
@@ -19,7 +19,6 @@ const Hero = () => {
           priority
           width={700}
           height={700}
-          style={{ maxHeight: "70vh" }}
         />
       </div>
       <div className="Hero_Content md:max-w-[50%]">
@@ -61,7 +60,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
