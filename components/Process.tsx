@@ -15,7 +15,7 @@ export default function ProcessSection() {
           just 2 weeks
         </h3>
 
-        <div className="Process_Stepsflex flex-col gap-3">
+        <div className="Process_Steps flex flex-col gap-3">
           {processSteps.map((step, index) => (
             <ProcessCard
               key={step.id}
@@ -24,7 +24,7 @@ export default function ProcessSection() {
               text={step.text}
               className={`
                 transition-all
-                ${index % 2 === 1 ? "md:translate-x-50" : "md:-translate-x-20"}
+                ${index % 2 === 1 ? "md:translate-x-48" : "md:-translate-x-20"}
               `}
             />
           ))}
