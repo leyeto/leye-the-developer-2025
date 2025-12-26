@@ -33,7 +33,10 @@ const Benefits = () => {
             ))}
           </div>
         </div>
-        <div className="Benefits_ImageArea flex flex-col justify-between md:max-w-[48%]">
+        <div className="Benefits_ImageArea flex flex-col justify-between md:max-w-[48%] md:flex-col-reverse">
+          {rightBenefits.map((benefit, index) => (
+            <BenefitsCard key={index} title={benefit} />
+          ))}
           <Image
             src="/images/benefits.webp"
             alt="benefit-image"
@@ -41,9 +44,6 @@ const Benefits = () => {
             height={600}
             style={{ maxHeight: "600px" }}
           />
-          {rightBenefits.map((benefit, index) => (
-            <BenefitsCard key={index} title={benefit} />
-          ))}
         </div>
       </div>
     </section>
