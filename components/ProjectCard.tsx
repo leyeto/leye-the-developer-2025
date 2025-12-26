@@ -1,5 +1,4 @@
 import DeviceMockup from "./DeviceMockup";
-import Link from "next/link";
 import Button from "./Button";
 
 type Props = {
@@ -24,7 +23,13 @@ export default function ProjectCard({
         <p className="mt-2 text-sm text-white">{description}</p>
 
         {link && (
-          <Button variant="outline" href={link} target="_blank" className="">
+          <Button
+            variant="outline"
+            href={link}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="my-4"
+          >
             View project
           </Button>
         )}

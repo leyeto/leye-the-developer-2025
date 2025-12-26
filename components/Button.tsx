@@ -22,7 +22,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "px-6 py-3 my-3 rounded-lg font-medium transition-all duration-200 inline-flex items-center justify-center";
+    "px-6 py-3 rounded-lg font-medium transition-all duration-200 inline-flex items-center justify-center";
 
   const variants = {
     filled: "bg-ld-teal text-black hover:bg-white active:scale-95",
@@ -42,7 +42,12 @@ export default function Button({
   // If href is provided, render as Link
   if (href) {
     return (
-      <Link href={href} target={target} className={buttonClasses}>
+      <Link
+        href={href}
+        target={target}
+        rel={target === "_blank" ? "noopener noreferrer" : ""}
+        className={buttonClasses}
+      >
         {children}
       </Link>
     );
