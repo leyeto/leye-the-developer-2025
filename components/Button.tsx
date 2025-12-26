@@ -7,6 +7,7 @@ type ButtonVariant = "filled" | "outline";
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   children: ReactNode;
+  target?: string;
   href?: string;
   fullWidth?: boolean;
 }
@@ -15,6 +16,7 @@ export default function Button({
   variant = "filled",
   children,
   href,
+  target,
   fullWidth = false,
   className = "",
   ...props
@@ -40,7 +42,12 @@ export default function Button({
   // If href is provided, render as Link
   if (href) {
     return (
-      <Link href={href} className={buttonClasses}>
+      <Link
+        href={href}
+        target={target}
+        rel={target === "_blank" ? "noopener noreferrer" : ""}
+        className={buttonClasses}
+      >
         {children}
       </Link>
     );
