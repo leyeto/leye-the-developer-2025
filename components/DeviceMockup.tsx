@@ -29,7 +29,7 @@ export default function DeviceMockup({
 
       {/* Website screenshot */}
       <div
-        className="absolute inset-[11%_10%_9%_10%] overflow-hidden rounded-md"
+        className="absolute overflow-hidden rounded-md"
         style={{
           top: screenInsets.top,
           right: screenInsets.right,

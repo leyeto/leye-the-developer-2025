@@ -20,17 +20,13 @@ export default function ProjectCard({
       <DeviceMockup image={image} />
 
       <div className="mt-4">
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <p className="mt-2 text-sm text-zinc-600">{description}</p>
+        <h3 className="text-lg font-semibold text-ld-teal">{title}</h3>
+        <p className="mt-2 text-sm text-white">{description}</p>
 
         {link && (
-          <Link
-            href={link}
-            target="_blank"
-            className="inline-block mt-4 text-sm font-medium hover:underline"
-          >
-            <Button variant="outline">View project</Button>
-          </Link>
+          <Button variant="outline" href={link} target="_blank" className="">
+            View project
+          </Button>
         )}
       </div>
     </div>
