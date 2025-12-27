@@ -1,4 +1,4 @@
-import BenefitsCard from "./BenefitsCard";
+import BenefitsCard from "../cards/BenefitsCard";
 import Image from "next/image";
 
 const leftBenefits = [

@@ -6,9 +6,9 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    service: "Up to 5 Pages",
+    service: "Up to 5 Pages / Sections",
     description:
-      "A complete website of up to five pages, professionally designed to showcase your business clearly.",
+      "A complete website of up to five pages/sections, professionally designed to showcase your business clearly.",
     imgUrl: "/images/services/up_to_5_pages.svg",
   },
   {

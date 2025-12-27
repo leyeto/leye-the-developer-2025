@@ -1,4 +1,4 @@
-import ServiceList from "./ServiceList";
+import ServiceList from "../ServiceList";
 
 const Services = () => {
   return (

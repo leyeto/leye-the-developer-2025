@@ -1,5 +1,5 @@
-import DeviceMockup from "./DeviceMockup";
-import Button from "./Button";
+import DeviceMockup from "../DeviceMockup";
+import Button from "../Button";
 
 type Props = {
   title: string;

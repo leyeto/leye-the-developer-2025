@@ -1,5 +1,5 @@
 import { services } from "@/data/services";
-import Service from "./ServiceCard";
+import Service from "./cards/ServiceCard";
 
 const ServiceList = () => {
   return (

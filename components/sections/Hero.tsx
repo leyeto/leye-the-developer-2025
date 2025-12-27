@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import Aurora from "./Aurora/Aurora";
-import Button from "./Button";
+import Aurora from "../Aurora/Aurora";
+import Button from "../Button";
 
 const heroServices = [
   "Up to 5 pages + mobile responsive",

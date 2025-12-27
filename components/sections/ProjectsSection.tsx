@@ -1,5 +1,5 @@
 import { projects } from "@/data/projects";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "@/components/cards/ProjectCard";
 
 export default function ProjectsSection() {
   const threeProjects = projects.slice(0, 3);

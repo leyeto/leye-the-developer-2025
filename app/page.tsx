@@ -1,8 +1,8 @@
-import Benefits from "@/components/Benefits";
-import Hero from "@/components/Hero";
-import Process from "@/components/Process";
-import ProjectsSection from "@/components/ProjectsSection";
-import Services from "@/components/Services";
+import Benefits from "@/components/sections/Benefits";
+import Hero from "@/components/sections/Hero";
+import Process from "@/components/sections/Process";
+import ProjectsSection from "@/components/sections/ProjectsSection";
+import Services from "@/components/sections/Services";
 
 export default function Home() {
   return (

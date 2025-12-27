@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { processSteps } from "@/data/processData";
-import { ProcessCard } from "@/components/ProcessCard";
+import { ProcessCard } from "@/components/cards/ProcessCard";
 
 export default function ProcessSection() {
   return (
