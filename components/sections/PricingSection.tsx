@@ -1,3 +1,5 @@
+import PricingList from "../PricingList";
+
 const PricingSection = () => {
   return (
     <section className="PricingSection flex flex-col items-center my-10">
@@ -9,6 +11,7 @@ const PricingSection = () => {
         Everything you need for a professional online presence, delivered in
         just 2 weeks
       </h4>
+      <PricingList />
     </section>
   );
 };
